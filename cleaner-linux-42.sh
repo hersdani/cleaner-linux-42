@@ -6,7 +6,7 @@
 #    By: dherszen <dherszen@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/26 11:54:53 by dherszen          #+#    #+#              #
-#    Updated: 2024/03/26 11:56:45 by dherszen         ###   ########.fr        #
+#    Updated: 2024/03/26 12:48:25 by dherszen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,9 @@ fi
 # Quick Accesses
 apps="$HOME/.var/app"
 conf="$HOME/.config"
-firefox_profile_path="$apps/org.mozilla.firefox/.mozilla/firefox/9jmyejs5.Default User"
+profile_path=$(grep -oP 'Default=\K.*' "$HOME/.var/app/org.mozilla.firefox/.mozilla/firefox/profiles.ini")
+firefox_path="$apps/org.mozilla.firefox/.mozilla/firefox"
+firefox_profile_path="$firefox_path/$profile_path"
 
 # Folders to clear up
 select=(

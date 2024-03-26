@@ -1,5 +1,5 @@
 # cleaner-linux-42
-Shell script cleaner for users of _École 42_ where Ubuntu and ftpkg are used.
+Shell script cleaner for students of _École 42_ where Ubuntu and ftpkg are used.
 
 **Usage:**
 You will need to update your firefox_profile_path to work cleaning Mozilla Firefox cache.
